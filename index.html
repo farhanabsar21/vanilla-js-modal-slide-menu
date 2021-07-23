@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation | Vanilla Javascript</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <img src="https://randomuser.me/api/portraits/men/75.jpg" alt="">
+        </div>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <header>
+        <button class="toggle" id="toggle">
+            <i class="fas fa-bars"></i>
+        </button>
+        <h1>my personal blog</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque, voluptates?</p>
+        <button class="cta-btn" id="open">Sign up</button>
+    </header>
+    <div class="container">
+        <h2>still don't know about me?</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur esse, a, sed ratione assumenda itaque rerum unde totam quam ad sapiente, nostrum dolorem consequuntur. Corrupti ab perferendis magni est numquam.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, numquam voluptas quam ipsam eos esse assumenda saepe ab ducimus minima!</p>
+        <h2>tell me more</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos, debitis error soluta accusantium qui corporis mollitia nostrum repellendus atque magni temporibus odio in, earum, culpa repellat! Autem tempora, tempore, quam quibusdam officiis deleniti id nemo velit non est cum doloribus.</p>
+        <h2>benefits</h2>
+        <ul>
+            <li>life time access</li>
+            <li>30 days money back</li>
+            <li>tailored customer support</li>
+        </ul>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum reiciendis illum doloremque quos saepe maxime hic repudiandae commodi libero consequuntur dolores veritatis labore incidunt perspiciatis laudantium, dolor vero eveniet sapiente quas deserunt quam neque ipsum. Sequi necessitatibus porro iste numquam.</p>
+    </div>
+    <!-- modal -->
+    <div class="modal-container" id="modal">
+        <div class="modal">
+            <button class="close-btn" id="close">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="modal-header">
+                <h3>Sign up</h3>
+            </div>
+            <div class="modal-content">
+                <p>Register with us to get offers, support and more.</p>
+                <form class="modal-form">
+                    <div>
+                        <label for="name">Name</label>
+                        <input type="text" id="name" placeholder="Your name" class="form-input">
+                    </div>
+                    <div>
+                        <label for="email">Email</label>
+                        <input type="email" id="email" placeholder="Your email" class="form-input">
+                    </div>
+                    <div>
+                        <label for="password">Password</label>
+                        <input type="password" id="password" placeholder="Your password" class="form-input">
+                    </div>
+                    <div>
+                        <label for="passwordConfirm">Conform password</label>
+                        <input type="password" id="passwordConfirm" placeholder="Confirm password" class="form-input">
+                    </div>
+                    <div>
+                        <input type="submit" value="submit" class="submit-btn">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="./app.js"></script>
+</body>
+</html>
